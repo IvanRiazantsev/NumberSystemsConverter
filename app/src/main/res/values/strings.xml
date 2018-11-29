@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NSCalc</string>
+    <string name="initialNS">Initial number system: </string>
+    <string name="resultNS">Result number system: </string>
+    <string name="wrong">WRONG</string>
+</resources>

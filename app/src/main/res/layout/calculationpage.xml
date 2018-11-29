@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/inputEditText2"
+        android:layout_width="329dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="79dp"
+        android:layout_alignStart="@+id/inputEditText"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/buttons"
+        android:background="@color/editTextBackgroundColor"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:hint="Result"
+        android:ems="10"
+        android:singleLine="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textNoSuggestions|textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/spinner2"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/resultNS"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/spinner"
+        android:layout_marginTop="49dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/initialNS"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="15sp" />
+
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinner"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/inputEditText"
+        android:layout_marginTop="70dp"
+        app:ms_alignLabels="false"
+        app:ms_arrowColor="@color/spinnerArrowColor"
+        app:ms_arrowSize="16dp"
+        app:ms_baseColor="@color/spinnerColor"
+        app:ms_enableErrorLabel="false"
+        app:ms_highlightColor="@color/spinnerHighlightedColor"
+        app:ms_multiline="false"
+        app:ms_thickness="2dp" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/swapButton"
+        android:layout_alignBottom="@id/spinner"
+        android:src="@drawable/ic_compare_arrows_black_24dp"
+        android:textColor="@color/buttonTextColor"
+        android:theme="@style/AppTheme.Button"/>
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinner2"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/inputEditText"
+        android:layout_marginTop="70dp"
+        app:ms_alignLabels="false"
+        app:ms_arrowColor="@color/spinnerArrowColor"
+        app:ms_arrowSize="16dp"
+        app:ms_baseColor="@color/spinnerColor"
+        app:ms_enableErrorLabel="false"
+        app:ms_highlightColor="@color/spinnerHighlightedColor"
+        app:ms_multiline="false"
+        app:ms_thickness="2dp" />
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="329dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/editTextBackgroundColor"
+        android:digits="0123456789abcdefABCDEF"
+        android:ems="10"
+        android:focusedByDefault="false"
+        android:hint="0"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:inputType="textNoSuggestions"
+        android:singleLine="false" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center_horizontal"
+    android:id="@+id/buttons"
+    android:layout_below="@id/inputEditText">
+
+
+
+    <Button
+        android:id="@+id/pasteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="paste"
+        android:textColor="@color/buttonTextColor"
+        android:theme="@style/AppTheme.Button" />
+
+
+</LinearLayout>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.hexButton"
+                android:id="@+id/buttonA"
+                android:text="A"
+                />
+            <Button
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.hexButton"
+                android:id="@+id/buttonB"
+                android:text="B"/>
+            <Button
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.hexButton"
+                android:id="@+id/buttonC"
+                android:text="C"/>
+            <Button
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.hexButton"
+                android:id="@+id/buttonD"
+                android:text="D"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:text="1"
+                />
+            <Button
+                android:id="@+id/button2"
+                android:text="2"/>
+            <Button
+                android:id="@+id/button3"
+                android:text="3"/>
+            <Button
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.hexButton"
+                android:id="@+id/buttonE"
+                android:text="E"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                android:text="4"
+                />
+            <Button
+                android:id="@+id/button5"
+                android:text="5"/>
+            <Button
+                android:id="@+id/button6"
+                android:text="6"/>
+            <Button
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.hexButton"
+                android:id="@+id/buttonF"
+                android:text="F"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                android:text="7"
+                />
+            <Button
+                android:id="@+id/button8"
+                android:text="8"
+                />
+            <Button
+                android:id="@+id/button9"
+                android:text="9"/>
+            <Button
+                android:id="@+id/delButton"
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.Button"
+                android:text="del"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button0"
+                android:text="0"/>
+            <Button
+                android:id="@+id/copyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy"
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.Button"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cleanButton"
+                android:text="Clean"
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.Button"/>
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Convert"
+                android:textColor="@color/buttonTextColor"
+                android:theme="@style/AppTheme.ResultButton" />
+
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+
+</RelativeLayout>

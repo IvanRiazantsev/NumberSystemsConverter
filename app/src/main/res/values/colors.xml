@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202020</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="tabBackgroundColor">#000000</color>
+    <color name="tabTextColor">#E1E2E2</color>
+    <color name="tabIndicatorColor">#984847</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="spinnerColor">#A0B5AE</color>
+    <color name="buttonTextColor">#ffffff</color>
+    <color name="spinnerArrowColor">#FFFFFF</color>
+    <color name="spinnerHighlightedColor">#984847</color>
+    <color name="editTextBackgroundColor">#EEECED</color>
+    <color name="resultButtonColor">#984847</color>
+    <color name="buttonColor">#A0B5AE</color>
+    <color name="hexButtonColor">#6772a6</color>
+
+</resources>
